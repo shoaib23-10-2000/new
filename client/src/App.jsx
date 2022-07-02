@@ -1,15 +1,19 @@
-import { Navbar, Welcome, Footer, Services, Transactions } from "./components";
+import React from "react";
+import {Routes, Route, BrowserRouter as Router} from "react-router-dom";
+import Home from "./Pages/Home";
+import Dashboard from "./Pages/Dashboard";
+import Portfolio from "./Pages/Portfolio";
+import Explore from "./Pages/Explore";
 
 const App = () => (
-  <div className="min-h-screen">
-    <div className="gradient-bg-welcome">
-      <Navbar />
-      <Welcome />
-    </div>
-    <Services />
-    <Transactions />
-    <Footer />
-  </div>
-);
-
+  <Router>
+      <Routes>
+        <Route index element={<Home/>} />
+        <Route path="/Home" element={<Home/>} />
+        <Route path="/Dashboard" element={<Dashboard/>} />
+        <Route path="/Explore" element={<Explore/>} />
+        <Route path="/Portfolio" element={<Portfolio/>} />
+      </Routes>
+  </Router>
+)
 export default App;

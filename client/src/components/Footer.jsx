@@ -9,10 +9,9 @@ const Footer = () => (
         <img src={wallet} alt="logo" className="w-32" />
       </div>
       <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full">
-        <p className="text-white text-base text-center mx-2 cursor-pointer">Dashboard</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer">Explore</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer">Portfolio</p>
-        <p className="text-white text-base text-center mx-2 cursor-pointer">Wallets</p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer">About Us</p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer">Contact Us</p>
+        <p className="text-white text-base text-center mx-2 cursor-pointer">Social Media</p>
       </div>
     </div>
 

@@ -31,7 +31,6 @@ const Services = () => (
           various super friendly services we offer
         </p>
       </div>
-
       <div className="flex-1 flex flex-col justify-start items-center">
         <ServiceCard
           color="bg-[#2952E3]"
